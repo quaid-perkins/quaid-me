@@ -6,7 +6,7 @@ import { splitProps } from "solid-js";
 import { cva } from "@/libs/cva";
 
 export const buttonVariants = cva({
-  base: "inline-flex shrink-0 cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium text-sm outline-none transition-all focus-visible:ring-[3px] focus-visible:ring-purple-800/75 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-red-900 aria-invalid:ring-red-600/20 dark:aria-invalid:ring-red-900/40 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+  base: "inline-flex shrink-0 cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium text-sm outline-none transition-all focus-visible:ring-[3px] focus-visible:ring-purple-800/75 disabled:pointer-events-none disabled:opacity-50 aria-invalid:ring-red-600/20 dark:aria-invalid:ring-red-900/40 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
   variants: {
     variant: {
       default:
