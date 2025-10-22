@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+/* biome-ignore lint/suspicious/noUnknownAtRules: tailwind custom variant */
+@custom-variant dark {
+  &:where([data-theme="dark"], [data-theme="dark"] *) {
+    /* biome-ignore lint/suspicious/noUnknownAtRules: tailwind slot */
+    @slot;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &:where([data-theme="system"], [data-theme="system"] *) {
+      /* biome-ignore lint/suspicious/noUnknownAtRules: tailwind slot */
+      @slot;
+    }
+  }
+}
