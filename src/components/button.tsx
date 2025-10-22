@@ -6,20 +6,19 @@ import { splitProps } from "solid-js";
 import { cva } from "@/libs/cva";
 
 export const buttonVariants = cva({
-  base: "inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium text-sm outline-none transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+  base: "inline-flex shrink-0 cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium text-sm outline-none transition-all focus-visible:ring-[3px] focus-visible:ring-purple-800/75 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-red-900 aria-invalid:ring-red-600/20 dark:aria-invalid:ring-red-900/40 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0",
   variants: {
     variant: {
       default:
-        "bg-primary text-primary-foreground shadow-xs hover:bg-primary/90",
+        "bg-zinc-100 text-zinc-950 shadow-xs hover:bg-zinc-100/90 dark:bg-zinc-800 dark:text-zinc-50 dark:hover:bg-zinc-800/90",
+      primary: "bg-purple-800 text-zinc-50 shadow-xs hover:bg-purple-800/80",
       destructive:
-        "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:bg-destructive/60 dark:focus-visible:ring-destructive/40",
+        "bg-red-600 text-zinc-50 shadow-xs hover:bg-red-600/90 focus-visible:ring-red-600/50 dark:bg-red-900 dark:focus-visible:ring-red-900/75 dark:hover:bg-red-900/90",
       outline:
-        "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
-      secondary:
-        "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
+        "border border-zinc-300 bg-zinc-100 text-zinc-950 shadow-xs hover:bg-zinc-100/90 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-50 dark:hover:bg-zinc-800/90",
       ghost:
-        "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
-      link: "text-primary underline-offset-4 hover:underline",
+        "text-zinc-950 hover:bg-zinc-100/90 hover:shadow-xs dark:text-zinc-50 dark:hover:bg-zinc-800/90",
+      link: "text-zinc-950 underline-offset-4 hover:underline dark:text-zinc-50",
     },
     size: {
       default: "h-9 px-4 py-2 has-[>svg]:px-3",
