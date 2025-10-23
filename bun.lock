@@ -9,6 +9,7 @@
         "@solidjs/start": "^1.1.0",
         "clsx": "^2.1.1",
         "cva": "^1.0.0-beta.4",
+        "lucide-solid": "^0.546.0",
         "solid-js": "^1.9.5",
         "tailwind-merge": "^3.3.1",
         "vinxi": "^0.5.7",
@@ -797,6 +798,8 @@
     "lodash.isarguments": ["lodash.isarguments@3.1.0", "", {}, "sha512-chi4NHZlZqZD18a0imDHnZPrDeBbTtVN7GXMwuGdRH9qotxAjYs3aVLKc7zNOG9eddR5Ksd8rvFEBc9SsggPpg=="],
 
     "lru-cache": ["lru-cache@10.4.3", "", {}, "sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ=="],
+
+    "lucide-solid": ["lucide-solid@0.546.0", "", { "peerDependencies": { "solid-js": "^1.4.7" } }, "sha512-zJX9x7rlOwqsB6eNMWOrzS+vuvZThPFksPVryiXMmC6QGAD6vRihEZHe+r4JSppAGhOaPRBnMhg8XNZ/qLslvA=="],
 
     "magic-string": ["magic-string@0.30.19", "", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.5" } }, "sha512-2N21sPY9Ws53PZvsEpVtNuSW+ScYbQdp4b9qUaL+9QkHUrGFKo56Lg9Emg5s9V/qrtNBmiR01sYhUOwu3H+VOw=="],
 
