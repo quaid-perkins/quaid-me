@@ -71,11 +71,11 @@ export const DrawerContent = <T extends ValidComponent = "div">(
             "after:inset-x-0 after:bottom-[calc(100%-1px)] after:h-1/2",
           ],
           context.side() === "left" && [
-            "inset-y-0 left-0 w-3/4 border-r sm:max-w-sm",
+            "inset-y-0 left-0 w-full border-r sm:max-w-sm min-[24rem]:w-3/4",
             "after:inset-y-0 after:right-[calc(100%-1px)] after:w-1/2",
           ],
           context.side() === "right" && [
-            "inset-y-0 right-0 w-3/4 border-l sm:max-w-sm",
+            "inset-y-0 right-0 w-full border-l sm:max-w-sm min-[24rem]:w-3/4",
             "after:inset-y-0 after:left-[calc(100%-1px)] after:w-1/2",
           ],
           props.class,
