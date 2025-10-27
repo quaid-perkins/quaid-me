@@ -19,6 +19,7 @@ export const buttonVariants = cva({
       ghost:
         "text-zinc-950 hover:bg-zinc-100/90 hover:shadow-xs dark:text-zinc-50 dark:hover:bg-zinc-800/90",
       link: "text-zinc-950 underline-offset-4 hover:underline dark:text-zinc-50",
+      clear: "",
     },
     size: {
       default: "h-9 px-4 py-2 has-[>svg]:px-3",
