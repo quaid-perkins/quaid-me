@@ -3,6 +3,7 @@ import { FileRoutes } from "@solidjs/start/router";
 import { Suspense } from "solid-js";
 import "@/app.css";
 
+import Footer from "@/components/footer";
 import NavBar from "@/components/nav-bar";
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
         <>
           <NavBar />
           <Suspense>{props.children}</Suspense>
+          <Footer />
         </>
       )}
     >

@@ -12,7 +12,7 @@ export default createHandler(() => (
           {assets}
         </head>
         <body class="bg-zinc-200 font-rubik dark:bg-zinc-900">
-          <div id="app" class="min-h-[100dvh]">
+          <div id="app" class="flex min-h-[100dvh] flex-col">
             {children}
           </div>
           {scripts}
