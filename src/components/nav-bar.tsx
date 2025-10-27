@@ -40,7 +40,7 @@ const NavBar: Component = () => {
   return (
     <header>
       <nav class="flex justify-between p-4">
-        <Button as={A} href="/" variant="link">
+        <Button as={A} href="/" variant="link" class="px-2 text-base">
           {"<Quaid />"}
         </Button>
         <Switch fallback={<MobileLinksDrawer themeButton={themeButton()} />}>
