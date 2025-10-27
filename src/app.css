@@ -1,4 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
+
+/* biome-ignore lint/suspicious/noUnknownAtRules: tailwind theme config */
+@theme {
+  --font-rubik: "Rubik", sans-serif;
+}
 
 /* biome-ignore lint/suspicious/noUnknownAtRules: tailwind custom variant */
 @custom-variant dark {
