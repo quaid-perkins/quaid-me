@@ -1,6 +1,6 @@
 import { usePrefersDark } from "@solid-primitives/media";
 import { A } from "@solidjs/router";
-import { MenuIcon, MoonIcon, SunIcon, XIcon } from "lucide-solid";
+import { GithubIcon, MenuIcon, MoonIcon, SunIcon, XIcon } from "lucide-solid";
 import {
   type Accessor,
   type Component,
@@ -15,6 +15,7 @@ import {
   Drawer,
   DrawerClose,
   DrawerContent,
+  DrawerFooter,
   DrawerHeader,
   DrawerPortal,
   DrawerTrigger,
@@ -124,6 +125,17 @@ const MobileLinksDrawer: Component<LinksContainerProps> = (props) => {
             />
           </DrawerHeader>
           <div class="flex flex-col p-4">{/* for loop over 'navLinks' */}</div>
+          <DrawerFooter class="flex-row justify-end">
+            <Button
+              as="a"
+              href="https://github.com/quaid-perkins/quaid-me"
+              target="_blank"
+              variant="ghost"
+              size="icon"
+            >
+              <GithubIcon />
+            </Button>
+          </DrawerFooter>
         </DrawerContent>
       </DrawerPortal>
     </Drawer>
